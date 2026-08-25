@@ -3,14 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YDDSa · 언어로 연결하고, 커리어로 성장하세요</title>
-<meta name="description" content="현지에서 실제로 쓰는 한국어와 중국어를 배우고, 자격증까지 준비하는 한중언어·커리어 플랫폼 YDDSa">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Noto+Sans+KR:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<title>KOREA●CHINA Bridge</title>
+<style>
+:root{--navy:#102746;--blue:#2563d9;--red:#e33b4d;--text:#14233d;--muted:#667085;--bg:#f7f9fc}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans KR",sans-serif;color:var(--text);background:#fff}
+a{text-decoration:none;color:inherit}.nav{height:76px;display:flex;align-items:center;padding:0 5.5%;gap:42px;border-bottom:1px solid #eee;background:#fff;position:sticky;top:0;z-index:10}
+.logo{font-weight:800;font-size:25px;line-height:.9;display:flex;align-items:center;gap:9px}.logo b{color:#1e5bc7}.mark{font-size:28px;color:#e33b4d}
+.menu{display:flex;gap:30px;margin:auto;font-weight:700;font-size:15px}.right{display:flex;align-items:center;gap:22px;font-size:14px}.signup{background:var(--navy);color:white;padding:12px 22px;border-radius:24px;font-weight:700}
+.hero{min-height:535px;background:linear-gradient(90deg,rgba(255,255,255,.93),rgba(255,255,255,.45),rgba(255,255,255,.08)),url('hero.png') center/cover;display:flex;flex-direction:column;align-items:center;padding:62px 6% 40px;text-align:center}
+.kicker{font-size:22px;margin:0 0 10px}.hero h1{font-size:48px;line-height:1.18;margin:0 0 12px;letter-spacing:-2px}.hero>p{font-size:20px;margin:0 0 30px}
+.starts{display:grid;grid-template-columns:1fr 1fr;gap:18px;width:min(760px,100%)}.start{background:rgba(255,255,255,.9);border:1px solid #e5e9f0;border-radius:17px;padding:24px;text-align:left;box-shadow:0 8px 25px #172b4d18}.start h2{font-size:22px;margin:10px 0}.start p{margin:0;color:#4b5870}.start strong{color:#1760cf}.start.red strong{color:#df3345}.btn{display:inline-block;margin-top:18px;padding:12px 20px;background:#2563d9;color:#fff;border-radius:8px;font-weight:700}.red .btn{background:#e33b4d}
+.section{padding:55px 6%;max-width:1250px;margin:auto}.center{text-align:center}.center h2{font-size:28px;margin:0 0 28px}.services{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.card{padding:28px 25px;border:1px solid #e8ebf1;border-radius:14px;background:white;box-shadow:0 4px 14px #182b4510}.icon{font-size:34px}.card h3{margin:12px 0 7px}.card p{color:var(--muted);font-size:14px;line-height:1.6}.more{color:#2563d9;font-weight:700;font-size:14px}
+.grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}.panel{border:1px solid #e7eaf0;border-radius:15px;padding:25px;background:#fff}.panel-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}.panel-head h2{margin:0;font-size:20px}.job{display:grid;grid-template-columns:90px 1fr auto;gap:15px;align-items:center;padding:16px 0;border-top:1px solid #eef0f4}.company{font-weight:800;font-size:12px}.job-title{font-weight:700}.tags span{background:#f3f5f8;padding:5px 8px;border-radius:6px;font-size:11px;color:#68758a;margin-right:4px}.date{font-size:11px;color:#8993a4}.story{display:flex;gap:20px;align-items:center;background:#fafbfd;padding:22px;border-radius:12px}.avatar{width:62px;height:62px;border-radius:50%;background:#dce6f5;display:flex;align-items:center;justify-content:center;font-size:28px}.story p{font-size:16px;line-height:1.5;margin:0 0 10px}.story small{color:#657188}
+.stats{background:var(--navy);color:white;display:grid;grid-template-columns:repeat(4,1fr);padding:35px 8%;gap:25px}.stat{text-align:center;border-right:1px solid #ffffff33}.stat:last-child{border:0}.stat b{display:block;font-size:28px;margin-top:8px}.stat span{color:#b9c5d8;font-size:13px}
+footer{padding:35px 6%;background:#0b1c33;color:#b9c5d8;font-size:13px;display:flex;justify-content:space-between}
+@media(max-width:850px){.menu{display:none}.nav{gap:15px}.starts,.grid{grid-template-columns:1fr}.services{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.hero h1{font-size:36px}}
+@media(max-width:520px){.services{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.right .login{display:none}.hero{padding-top:45px}}
+</style>
 </head>
-<body data-direction="cn2kr">
+<body>
+<nav class="nav">
+  <div class="logo"><span class="mark">◧</span><div><small>KOREA●CHINA</small><br><b>Bridge</b></div></div>
+  <div class="menu"><a href="#learn">언어 학습</a><a href="#career">취업·커리어</a><a href="#community">커뮤니티</a><a href="#jobs">채용 공고</a><a href="#how">이용 방법</a></div>
+  <div class="right"><span>🌐 한국어⌄</span><span class="login">로그인</span><a class="signup" href="#join">회원가입</a></div>
+</nav>
+
+<section class="hero">
+  <p class="kicker">한국과 중국을 아는 사람들이 만든</p>
+  <h1>언어로 연결하고, 커리어로 성장하세요</h1>
+  <p>언어 학습부터 취업까지, 한·중을 잇는 모든 기회를 한 곳에서</p>
+  <div class="starts">
+    <div class="start">
+      <div>🇨🇳 중국인 → 🇰🇷 한국</div>
+      <h2>한국어를 배우고<br><strong>한국 커리어를 준비하는 중국인</strong></h2>
+      <a class="btn" href="#learn">시작하기 →</a>
+    </div>
+    <div class="start red">
+      <div>🇰🇷 한국인 → 🇨🇳 중국</div>
+      <h2>중국어를 배우고<br><strong>중국 커리어를 준비하는 한국인</strong></h2>
+      <a class="btn" href="#learn">시작하기 →</a>
+    </div>
+  </div>
+</section>
 
   <!-- ===== Header ===== -->
   <header class="site-header">
